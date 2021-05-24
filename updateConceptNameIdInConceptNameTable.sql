@@ -1,0 +1,1 @@
+update concept_name set concept_name_id = concept_name_id + 1000000;
