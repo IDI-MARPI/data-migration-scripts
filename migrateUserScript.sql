@@ -1,0 +1,3 @@
+SET FOREIGN_KEY_CHECKS=0;
+INSERT INTO users(user_id,system_id,username,password,salt,secret_question,secret_answer,creator,date_created,changed_by,date_changed,person_id,retired,retired_by,date_retired,retire_reason,uuid,activation_key,email) SELECT user_id,system_id,username,password,salt,secret_question,secret_answer,creator,date_created,changed_by,date_changed,person_id,retired,retired_by,date_retired,retire_reason,uuid,NULL,NULL FROM hospital.users;
+SET FOREIGN_KEY_CHECKS=1;
