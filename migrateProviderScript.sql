@@ -1,0 +1,3 @@
+SET FOREIGN_KEY_CHECKS=0;
+INSERT INTO provider(provider_id,person_id,name,identifier,creator,date_created,changed_by,date_changed,retired,retired_by,date_retired,retire_reason,uuid,role_id,speciality_id,provider_role_id) SELECT provider_id,person_id,name,identifier,creator,date_created,changed_by,date_changed,retired,retired_by,date_retired,retire_reason,uuid,NULL,NULL,provider_role_id  FROM hospital.provider;
+SET FOREIGN_KEY_CHECKS=1;
